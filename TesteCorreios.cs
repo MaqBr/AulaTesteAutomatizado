@@ -20,7 +20,7 @@ namespace AulaTesteAutomatizado
 
         [Theory]
         [InlineData(Browser.Chrome, "MT", "Cuiabá", "Boa esperança")]
-        public void TestarConsultaCorreios(Browser browser, string UF, string cidade, string bairro)
+        public void ConsultarPorBairro(Browser browser, string UF, string cidade, string bairro)
         {
             TelaCorreios tela =
                 new TelaCorreios(_configuration, browser);
